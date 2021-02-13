@@ -26,6 +26,7 @@ public class Dialog : MonoBehaviour
         StartCoroutine(Type());
         start.SetActive(true);
         flag = true;
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         camera.SetActive(true);
         fps.SetActive(false);
@@ -70,6 +71,7 @@ public class Dialog : MonoBehaviour
             start.SetActive(false);
             flag = false;
             fps.SetActive(true);
+            Cursor.lockState = CursorLockMode.Locked;
             camera.SetActive(true);
 
         }
