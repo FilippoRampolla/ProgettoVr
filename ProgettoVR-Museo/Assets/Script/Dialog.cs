@@ -14,6 +14,7 @@ public class Dialog : MonoBehaviour
     public float typingSpeed;
     private bool flag;
 
+    public GameObject camera;
     public GameObject fps;
     public GameObject continueButton;
     public GameObject start;
@@ -25,8 +26,10 @@ public class Dialog : MonoBehaviour
         StartCoroutine(Type());
         start.SetActive(true);
         flag = true;
-        fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         Cursor.visible = true;
+        camera.SetActive(true);
+        fps.SetActive(false);
+       
     
      }  
     
@@ -66,8 +69,9 @@ public class Dialog : MonoBehaviour
             continueButton.SetActive(false);
             start.SetActive(false);
             flag = false;
-            fps.GetComponent<FirstPersonCharacterController>().enabled = true;
-            Cursor.visible = false;
+            fps.SetActive(true);
+            camera.SetActive(true);
+
         }
     }
 
