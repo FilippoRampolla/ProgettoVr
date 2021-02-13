@@ -12,7 +12,7 @@ public class Dialog : MonoBehaviour
     public string[] sentences;
     private int index;
     public float typingSpeed;
-    private bool flag;
+    
 
     public GameObject camera;
     public GameObject fps;
@@ -25,7 +25,6 @@ public class Dialog : MonoBehaviour
 
         StartCoroutine(Type());
         start.SetActive(true);
-        flag = true;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         camera.SetActive(true);
@@ -69,7 +68,6 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             start.SetActive(false);
-            flag = false;
             fps.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
             camera.SetActive(true);
