@@ -5,7 +5,7 @@ using TMPro;
 
 public class Dialog : MonoBehaviour
 
-  
+
 {
 
     public TextMeshProUGUI textDisplay;
@@ -14,20 +14,25 @@ public class Dialog : MonoBehaviour
     public float typingSpeed;
     private bool flag;
 
+    public GameObject fps;
     public GameObject continueButton;
     public GameObject start;
-    
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        StartCoroutine(Type());
+        start.SetActive(true);
+        flag = true;
+        fps.GetComponent<FirstPersonCharacterController>().enabled = false;
+        Cursor.visible = true;
+    
+     }  
+    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && flag==false)
-        {
-            StartCoroutine(Type());
-            start.SetActive(true);
-            flag = true;
-
-
-        }
+       
         if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
@@ -61,6 +66,8 @@ public class Dialog : MonoBehaviour
             continueButton.SetActive(false);
             start.SetActive(false);
             flag = false;
+            fps.GetComponent<FirstPersonCharacterController>().enabled = true;
+            Cursor.visible = false;
         }
     }
 
