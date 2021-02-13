@@ -16,13 +16,7 @@ public class Dialog : MonoBehaviour
 
     public GameObject continueButton;
     public GameObject start;
-    // Start is called before the first frame update
-
     
-    void Start()
-    {
-       
-    }
 
     void Update()
     {
