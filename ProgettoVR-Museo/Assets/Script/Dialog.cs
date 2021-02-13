@@ -27,8 +27,8 @@ public class Dialog : MonoBehaviour
         start.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        camera.SetActive(true);
-        fps.SetActive(false);
+        fps.GetComponent<FirstPersonCharacterController>().enabled = false;
+        this.gameObject.GetComponent<BoxCollider>().enabled = false;
        
     
      }  
@@ -68,9 +68,9 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             start.SetActive(false);
-            fps.SetActive(true);
+            fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
-            camera.SetActive(true);
+            
 
         }
     }
