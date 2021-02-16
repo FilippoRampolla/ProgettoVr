@@ -5787,8 +5787,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diapasontrigger: {fileID: 615443259}
-  testo_exit: {fileID: 1988942303}
-  testo_int: {fileID: 1428836665}
   cavas: {fileID: 480334553}
   esperimento: {fileID: 1579697003}
 --- !u!65 &615443262
@@ -13140,6 +13138,8 @@ MonoBehaviour:
   fps: {fileID: 1609784216}
   camera: {fileID: 223235102}
   cavas: {fileID: 1428836665}
+  testo_exit: {fileID: 1988942303}
+  testo_int: {fileID: 480334553}
 --- !u!4 &1579697006
 Transform:
   m_ObjectHideFlags: 0
@@ -16691,7 +16691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80b2011b425dcdf4eb88be6c2ff03bf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfera: {fileID: 3225070717856082458}
 --- !u!114 &8117015749106449444
 MonoBehaviour:
   m_ObjectHideFlags: 0
