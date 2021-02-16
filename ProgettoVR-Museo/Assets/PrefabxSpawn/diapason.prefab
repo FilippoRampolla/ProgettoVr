@@ -92,7 +92,6 @@ GameObject:
   - component: {fileID: 1284836813636970883}
   - component: {fileID: 4152818081185774996}
   - component: {fileID: 4152818081185774997}
-  - component: {fileID: 4152818081185774987}
   m_Layer: 0
   m_Name: Sphere.006
   m_TagString: Untagged
@@ -191,18 +190,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4137455876009383503, guid: f5b31636935befd45be1205db71a675e, type: 3}
---- !u!114 &4152818081185774987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1540238433413799422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3061e33f7a19bf843b7f1fe78c3a4ae9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3846267437946836835
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,8 +330,6 @@ GameObject:
   - component: {fileID: 4765497336816110984}
   - component: {fileID: 2147985022532088997}
   - component: {fileID: 4152818081955874900}
-  - component: {fileID: 4152818081955874891}
-  - component: {fileID: 4152818081955874890}
   m_Layer: 0
   m_Name: diapason.002
   m_TagString: Untagged
@@ -429,32 +414,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &4152818081955874891
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5211052484764631352}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1790209980902809759, guid: f5b31636935befd45be1205db71a675e, type: 3}
---- !u!114 &4152818081955874890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5211052484764631352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3061e33f7a19bf843b7f1fe78c3a4ae9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5261515926144437190
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +427,6 @@ GameObject:
   - component: {fileID: 2250890024806405762}
   - component: {fileID: 4152818080210556869}
   - component: {fileID: 4152818080210556870}
-  - component: {fileID: 4152818080210556868}
   m_Layer: 0
   m_Name: martello.002
   m_TagString: Untagged
@@ -567,18 +525,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1653187230999762036, guid: f5b31636935befd45be1205db71a675e, type: 3}
---- !u!114 &4152818080210556868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5261515926144437190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3061e33f7a19bf843b7f1fe78c3a4ae9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6874055031424566979
 GameObject:
   m_ObjectHideFlags: 0
