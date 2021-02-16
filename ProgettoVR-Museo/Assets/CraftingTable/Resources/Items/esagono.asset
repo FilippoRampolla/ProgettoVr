@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Generatore
+  m_Name: esagono
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemIcon: {fileID: 21300000, guid: fdda12142964ac04ca8ac75e9ba9e191, type: 3}
-  itemName: generatore
+  itemIcon: {fileID: 21300000, guid: ab4dd070a6ead46459571413ce593a28, type: 3}
+  itemName: esagono
