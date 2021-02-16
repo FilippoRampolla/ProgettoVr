@@ -40,6 +40,8 @@ public class FPSInteractionManager : MonoBehaviour
 
         if (_debugRay)
             DebugRaycast();
+
+
         if (Input.GetMouseButton(1))
         {
             Shoot();

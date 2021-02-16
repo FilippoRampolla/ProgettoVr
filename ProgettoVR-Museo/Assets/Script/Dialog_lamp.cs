@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Dialog_lamp_finale : MonoBehaviour
+public class Dialog_lamp : MonoBehaviour
 
 
 {
@@ -29,7 +29,7 @@ public class Dialog_lamp_finale : MonoBehaviour
         Cursor.visible = true;
         fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        NPC.GetComponent<Animation>().Play("Talking");
+        NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
        
 
     }  
@@ -74,7 +74,7 @@ public class Dialog_lamp_finale : MonoBehaviour
             fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             //NPC.GetComponent<NPCFollow>().enabled = false;
-            NPC.GetComponent<Animation>().Play("Happy Idle");
+            NPC.GetComponent<Animation>().CrossFadeQueued("Happy Idle");
 
         }
 

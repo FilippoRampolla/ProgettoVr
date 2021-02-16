@@ -10,10 +10,11 @@ public class Target_destroy : MonoBehaviour
     public GameObject lampFinal;
     public void Destory()
     {
-        Destroy(gameObject);
         sprite_patate.GetComponent<ItemSlot>().enabled = true;
         sprite_chiodi.GetComponent<ItemSlot>().enabled = true;
         lampFinal.GetComponent<BoxCollider>().enabled = true;
+        Destroy(gameObject);
+       
         
     }
 }
