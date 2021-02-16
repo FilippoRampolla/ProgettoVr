@@ -26,7 +26,7 @@ public class FPSInteractionManager : MonoBehaviour
 
     void Update()
     {
-        _rayOrigin = _fpsCameraT.position + _fpsController.radius * _fpsCameraT.forward;
+        //_rayOrigin = _fpsCameraT.position + _fpsController.radius * _fpsCameraT.forward;
 
         if(_grabbedObject == null)
             CheckInteraction();
