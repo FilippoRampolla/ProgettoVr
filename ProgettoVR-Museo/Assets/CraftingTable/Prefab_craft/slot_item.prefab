@@ -73,7 +73,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!114 &4043784729923314141
 MonoBehaviour:
@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 8562606705822661811}
   - component: {fileID: 1480002378833302795}
   - component: {fileID: 3205903549710189330}
+  - component: {fileID: -279820240785665396}
   m_Layer: 0
   m_Name: slot_item
   m_TagString: Untagged
@@ -191,3 +192,15 @@ MonoBehaviour:
   itemImage: {fileID: 3062809366776148303}
   itemTransform: {fileID: 4096972848588300355}
   canvas: {fileID: 0}
+--- !u!225 &-279820240785665396
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7720057131976165886}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

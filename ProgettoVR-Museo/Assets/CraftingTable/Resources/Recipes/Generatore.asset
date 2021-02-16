@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23d3dabca13d05f4da972b5d16c1e7ae, type: 3}
+  m_Name: Generatore
+  m_EditorClassIdentifier: 
+  topRow:
+  - {fileID: 11400000, guid: 881564cfc97ef1b499bb0077d87d9bbf, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  midRow:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: d946744fdf10dd449a595e31f4cd95a4, type: 2}
+  - {fileID: 0}
+  bottomRow:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 786d5adfe67b96647a844b7ce4aa365a, type: 2}
+  output: {fileID: 11400000, guid: dde28de8e30fa824d9300a9d51213537, type: 2}
