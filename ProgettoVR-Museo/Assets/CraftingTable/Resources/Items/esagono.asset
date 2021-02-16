@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: esagono
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemIcon: {fileID: 21300000, guid: ab4dd070a6ead46459571413ce593a28, type: 3}
+  itemIcon: {fileID: 21300000, guid: c257d74d8b2f7f2408610ebe75771633, type: 3}
   itemName: esagono

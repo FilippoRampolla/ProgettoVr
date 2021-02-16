@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: diamante
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemIcon: {fileID: 21300000, guid: 6596d49b714125d4a98a677712f72e37, type: 3}
+  itemIcon: {fileID: 21300000, guid: 3d9791791d28a9745b616ce8d8113662, type: 3}
   itemName: Diamante

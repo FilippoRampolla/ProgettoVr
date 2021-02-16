@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23d3dabca13d05f4da972b5d16c1e7ae, type: 3}
-  m_Name: New recipe
+  m_Name: esagano
   m_EditorClassIdentifier: 
   topRow:
   - {fileID: 11400000, guid: 0e8f0bef913455d47a14bdcc3e7a6727, type: 2}
@@ -23,5 +23,5 @@ MonoBehaviour:
   bottomRow:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 11400000, guid: 26bf50ff85b8dfb44b25c5052d9e5487, type: 2}
+  - {fileID: 11400000, guid: 4ac9a32d20f1b0e449d8dced897a3a8b, type: 2}
   output: {fileID: 11400000, guid: 7d53622af6c37114f8abb231b09525f3, type: 2}

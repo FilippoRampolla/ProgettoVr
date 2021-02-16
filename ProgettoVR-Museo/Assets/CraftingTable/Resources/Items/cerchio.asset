@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: cerchio
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemIcon: {fileID: 21300000, guid: 2dfa65a1760e79747b2b40ea04157b17, type: 3}
+  itemIcon: {fileID: 21300000, guid: 02811814af4b9de4aad6c22a1a41cfd9, type: 3}
   itemName: cerchio
