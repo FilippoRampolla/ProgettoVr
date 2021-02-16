@@ -29,8 +29,7 @@ public class Dialog_lamp : MonoBehaviour
         Cursor.visible = true;
         fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
-        NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
+        NPC.GetComponent<Animation>().Play("Talking1");
 
     }  
     
@@ -71,7 +70,7 @@ public class Dialog_lamp : MonoBehaviour
             start.SetActive(false);
             fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
-            NPC.GetComponent<Animation>().Play("Happy Idle");
+            NPC.GetComponent<NPCFollow>().enabled = true;
 
         }
 

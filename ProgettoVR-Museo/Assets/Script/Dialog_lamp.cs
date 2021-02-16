@@ -64,6 +64,8 @@ public class Dialog_lamp_finale : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
+            
+
         } else
         {
             textDisplay.text = "";
@@ -71,7 +73,8 @@ public class Dialog_lamp_finale : MonoBehaviour
             start.SetActive(false);
             fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
-            NPC.GetComponent<NPCFollow>().enabled = true;
+            //NPC.GetComponent<NPCFollow>().enabled = false;
+            NPC.GetComponent<Animation>().Play("Happy Idle");
 
         }
 
