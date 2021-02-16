@@ -18,6 +18,8 @@ public class FPSInteractionManager : MonoBehaviour
 
     private Grabbable _grabbedObject = null;
 
+    public GameObject Instruct;
+
 
     void Start()
     {
@@ -38,6 +40,22 @@ public class FPSInteractionManager : MonoBehaviour
 
         if (_debugRay)
             DebugRaycast();
+        if (Input.GetMouseButton(1))
+        {
+            Shoot();
+        }
+
+        RaycastHit hit;
+        if (Physics.Raycast(_fpsCameraT.position, _fpsCameraT.forward, out hit))
+        {
+            Debug.Log(hit.transform.name);
+            Target_destroy target = hit.transform.GetComponent<Target_destroy>();
+            if (target != null)
+            {
+                Instruct.SetActive(true);
+            }
+        }
+
     }
 
     private void CheckInteraction()
@@ -108,5 +126,20 @@ public class FPSInteractionManager : MonoBehaviour
     private void DebugRaycast()
     {
         Debug.DrawRay(_rayOrigin, _fpsCameraT.forward * _interactionDistance, Color.red);
+    }
+
+
+    void Shoot()
+    {
+        RaycastHit hit;
+        if(Physics.Raycast(_fpsCameraT.position, _fpsCameraT.forward, out hit))
+        {
+            Debug.Log(hit.transform.name);
+            Target_destroy target = hit.transform.GetComponent<Target_destroy>();
+            if (target != null)
+            {
+                target.Destory();
+            }
+        }
     }
 }
