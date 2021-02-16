@@ -13538,7 +13538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.737
+      value: 41.82
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13546,7 +13546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.187
+      value: -24.7
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14108,9 +14108,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1034984814}
-  sentences: []
+  sentences:
+  - ciao
+  - sono lamp
+  - iuiuiuo
+  - ojojiojoi
+  - jojojojoj
   typingSpeed: 0.02
-  NPC: {fileID: 1609784216}
+  NPC: {fileID: 499218199}
   camera: {fileID: 0}
   fps: {fileID: 1609784216}
   continueButton: {fileID: 1959504260}

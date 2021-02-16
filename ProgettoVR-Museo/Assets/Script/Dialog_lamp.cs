@@ -22,15 +22,15 @@ public class Dialog_lamp_finale : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        NPC.GetComponent<SadIdle>().enabled = false;
+        NPC.GetComponent<Animation>().Stop("Sad Idle");
         StartCoroutine(Type());
         start.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
-        NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
+        NPC.GetComponent<Animation>().Play("Talking");
+       
 
     }  
     

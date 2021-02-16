@@ -5,10 +5,11 @@ using UnityEngine;
 public class SadIdle : MonoBehaviour
 {
     public GameObject NPC;
-    void Update()
+    
+
+    private void OnTriggerEnter(Collider other)
     {
         NPC.GetComponent<Animation>().Play("Sad Idle");
+        this.gameObject.GetComponent<BoxCollider>().enabled = false;
     }
-
-    
 }
