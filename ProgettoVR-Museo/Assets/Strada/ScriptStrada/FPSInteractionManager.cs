@@ -54,6 +54,10 @@ public class FPSInteractionManager : MonoBehaviour
             {
                 Instruct.SetActive(true);
             }
+            else
+            {
+                Instruct.SetActive(false);
+            }
         }
 
     }
