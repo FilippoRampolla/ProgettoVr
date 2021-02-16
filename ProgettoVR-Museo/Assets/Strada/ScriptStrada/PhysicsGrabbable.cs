@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Collider))]
 public class PhysicsGrabbable : Grabbable
@@ -23,7 +23,8 @@ public class PhysicsGrabbable : Grabbable
     {
         _collider.enabled = false;
         _rigidbody.isKinematic = true;
-        
+        GetComponent<Rigidbody>().DOPause();
+
 
     }
 
@@ -31,5 +32,6 @@ public class PhysicsGrabbable : Grabbable
     {
         _collider.enabled = true;
         _rigidbody.isKinematic = false;
+        
     }
 }
