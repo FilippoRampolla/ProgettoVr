@@ -5009,7 +5009,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499218199}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69d0e93cedc9aa140bbc0c7d930cd7c9, type: 3}
   m_Name: 
@@ -5047,7 +5047,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499218199}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 987375a209200d54f85e0de665d20e5a, type: 3}
   m_Name: 
@@ -14104,14 +14104,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1680103406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd6945d649584ca42ad0d98c7d1eee0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 195316cb0b6970a4f93cecf95abba142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1034984814}
-  sentences:
-  - 'speriamo '
-  - funzioni
+  sentences: []
   typingSpeed: 0.02
+  NPC: {fileID: 1609784216}
   camera: {fileID: 0}
   fps: {fileID: 1609784216}
   continueButton: {fileID: 1959504260}
@@ -15790,7 +15789,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680103411}
+      - m_Target: {fileID: 0}
         m_MethodName: NextSentences
         m_Mode: 1
         m_Arguments:
