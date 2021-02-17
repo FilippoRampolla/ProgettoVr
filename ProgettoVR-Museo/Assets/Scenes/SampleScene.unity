@@ -4342,7 +4342,6 @@ GameObject:
   - component: {fileID: 236100075}
   - component: {fileID: 236100074}
   - component: {fileID: 236100073}
-  - component: {fileID: 236100077}
   m_Layer: 8
   m_Name: TRIGGER PORTA (5)
   m_TagString: Door
@@ -4425,18 +4424,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &236100077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236100072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f81d66ef3900d4a47981af3ceb5d5d75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &243688031
 GameObject:
   m_ObjectHideFlags: 0
@@ -8373,6 +8360,10 @@ MonoBehaviour:
   radio: {fileID: 1183173595}
   changeYPosButton: {fileID: 1010091220}
   Facoltativo: {fileID: 615443259}
+  trigger1: {fileID: 1135238000}
+  trigger2: {fileID: 2136211653}
+  trigger3: {fileID: 406573458}
+  trigger4: {fileID: 335131308}
 --- !u!1 &615443259
 GameObject:
   m_ObjectHideFlags: 0
@@ -13585,8 +13576,6 @@ MonoBehaviour:
   cam: {fileID: 1018632983}
   Trigger1: {fileID: 1091238991}
   Trigger2: {fileID: 142709532}
-  Trigger3: {fileID: 1135238000}
-  Trigger4: {fileID: 2136211653}
   invent: {fileID: 1455662515}
   NPCnew: {fileID: 7973925967032889013, guid: 42acf7e3c772d1049a0bf27be471b0b3, type: 3}
 --- !u!1 &1029030168 stripped
@@ -23557,7 +23546,6 @@ GameObject:
   - component: {fileID: 1796794054}
   - component: {fileID: 1796794053}
   - component: {fileID: 1796794052}
-  - component: {fileID: 1796794056}
   m_Layer: 8
   m_Name: TRIGGER PORTA
   m_TagString: Door
@@ -23640,18 +23628,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1796794056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796794051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f81d66ef3900d4a47981af3ceb5d5d75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1804105009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25140,7 +25116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1935034743
 Transform:
   m_ObjectHideFlags: 0

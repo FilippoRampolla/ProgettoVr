@@ -8,6 +8,11 @@ public class BellAnim : MonoBehaviour
     public GameObject radio;
     public Button3D changeYPosButton;
     public GameObject Facoltativo;
+
+    public GameObject trigger1;
+    public GameObject trigger2;
+    public GameObject trigger3;
+    public GameObject trigger4;
     void Start()
     {
         changeYPosButton.OnButtonPressed += OnChageYposButtonPressed;
@@ -18,5 +23,9 @@ public class BellAnim : MonoBehaviour
         radio.SetActive(false);
         Facoltativo.SetActive(true);
 
+        trigger1.GetComponent<Collider>().enabled = true;
+        trigger2.GetComponent<Collider>().enabled = true;
+        trigger3.GetComponent<Collider>().enabled = true;
+        trigger4.GetComponent<Collider>().enabled = true;
     }
 }

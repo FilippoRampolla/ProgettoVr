@@ -23,8 +23,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
 
     public GameObject Trigger1;
     public GameObject Trigger2;
-    public GameObject Trigger3;
-    public GameObject Trigger4;
+    
 
     public GameObject invent;
     public GameObject NPCnew;
@@ -96,8 +95,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
 
             Trigger1.GetComponent<Collider>().enabled = true;
             Trigger2.GetComponent<Collider>().enabled = true;
-            Trigger3.GetComponent<Collider>().enabled = true;
-            Trigger4.GetComponent<Collider>().enabled = true;
+            
 
 
         }
