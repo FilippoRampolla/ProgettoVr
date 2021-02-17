@@ -13588,6 +13588,7 @@ MonoBehaviour:
   Trigger3: {fileID: 1135238000}
   Trigger4: {fileID: 2136211653}
   invent: {fileID: 1455662515}
+  NPCnew: {fileID: 7973925967032889013, guid: 42acf7e3c772d1049a0bf27be471b0b3, type: 3}
 --- !u!1 &1029030168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3556649350350886081, guid: dfc5186ed0ff81e4dac53d116d025c91,

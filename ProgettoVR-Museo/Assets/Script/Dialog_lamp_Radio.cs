@@ -27,6 +27,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
     public GameObject Trigger4;
 
     public GameObject invent;
+    public GameObject NPCnew;
 
     //private void OnTriggerEnter(Collider other)
     //{
@@ -88,7 +89,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
             cam.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             Destroy(NPC);
-            Instantiate(NPC, pos.position, pos.rotation);
+            Instantiate(NPCnew, pos.position, pos.rotation);
 
             invent.SetActive(true);
             
@@ -97,6 +98,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
             Trigger2.GetComponent<Collider>().enabled = true;
             Trigger3.GetComponent<Collider>().enabled = true;
             Trigger4.GetComponent<Collider>().enabled = true;
+
 
         }
 
