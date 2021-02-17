@@ -3,7 +3,17 @@ guid: 566f9b2ed87fe5848b4e9a9e2c91f948
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Divanetto.002
+    second: {fileID: 2100000, guid: cb7e5852670e613438290574de1ec93d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metallo.013
+    second: {fileID: 2100000, guid: 50ce5c2f226a1aa4a942e31b12749561, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
