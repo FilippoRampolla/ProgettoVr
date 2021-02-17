@@ -3,37 +3,7 @@ guid: f5b31636935befd45be1205db71a675e
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: base_diapason.001
-    second: {fileID: 2100000, guid: ea25f5a382fd4a145ac9b6731761b72e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: base_pallina.001
-    second: {fileID: 2100000, guid: 11dd718ea93a6d741a86c50f63bb9e60, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: chord.001
-    second: {fileID: 2100000, guid: dde70e047799dd848b3e59a9cebe56f9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: diapasom.001
-    second: {fileID: 2100000, guid: 9a2877fe64fed8449ac7ce7786396521, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: hammer.001
-    second: {fileID: 2100000, guid: f5451381e34a67f47b59d5002a2203ed, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pallina.001
-    second: {fileID: 2100000, guid: 166751e8b8c116a48bcb97eb33a788ca, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0

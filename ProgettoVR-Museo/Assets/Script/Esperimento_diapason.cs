@@ -24,7 +24,7 @@ public class Esperimento_diapason : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("l"))
         {
             Instantiate(diapason, posizioneD.position, posizioneD.rotation);
             //Instantiate(martello, posizioneM.position, posizioneM.rotation);
