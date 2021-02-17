@@ -72,6 +72,7 @@ public class Dialog_lamp_finale : MonoBehaviour
             fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             // NPC.GetComponent<NPCFollow>().enabled = true;
+            inv.GetComponent<Inventory>().enabled = false;
             inv.GetComponent<CreazioneGeneratore>().enabled = true;
 
         }

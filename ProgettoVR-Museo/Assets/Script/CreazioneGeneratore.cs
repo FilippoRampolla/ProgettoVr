@@ -7,7 +7,8 @@ public class CreazioneGeneratore : MonoBehaviour
    
     public GameObject camera;
     public GameObject fps;
-    
+    public GameObject inv;
+
     private int flag = 0;
     // Start is called before the first frame update
 
@@ -19,15 +20,22 @@ public class CreazioneGeneratore : MonoBehaviour
         {
             if (flag == 0)
             {
-               
                 
-                // Debug.Log("in");
-            }
+                    camera.SetActive(true);
+                    fps.SetActive(false);
+                    inv.SetActive(true);
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    flag = 1;
+
+                    // Debug.Log("in");
+                }
             else
             {
                 camera.SetActive(true);
-                fps.SetActive(true);
+                fps.SetActive(false);
                 flag = 0;
+                inv.GetComponent<Inventory>().enabled = true;
 
                 // Debug.Log("out");
             }
