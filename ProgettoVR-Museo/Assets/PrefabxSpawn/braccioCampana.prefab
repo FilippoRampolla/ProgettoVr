@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6316756823158765924}
   - component: {fileID: 8092220403368840622}
   - component: {fileID: 7461552214425178543}
-  - component: {fileID: 7461552214425178542}
   m_Layer: 0
   m_Name: braccioCampana
   m_TagString: Untagged
@@ -95,22 +94,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2894843077594811650, guid: 8f0650883391f8d4d8dc85fb3d849292, type: 3}
---- !u!95 &7461552214425178542
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7732025136044862587}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30e0a5d02689b7946b2cc1c4ae7bbba7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

@@ -13,12 +13,18 @@ public class Dialog_lamp_Radio : MonoBehaviour
     private int index;
     public float typingSpeed;
     public GameObject NPC;
+    public Transform pos;
 
     
     public GameObject fps;
     public GameObject continueButton;
     public GameObject start;
     public GameObject cam;
+
+    public GameObject Trigger1;
+    public GameObject Trigger2;
+    public GameObject Trigger3;
+    public GameObject Trigger4;
 
     //private void OnTriggerEnter(Collider other)
     //{
@@ -71,10 +77,19 @@ public class Dialog_lamp_Radio : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             start.SetActive(false);
+            
             // fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             fps.SetActive(true);
+            cam.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
-            NPC.GetComponent<NPCFollow>().enabled = true;
+            Destroy(NPC);
+            Instantiate(NPC, pos.position, pos.rotation);
+            
+
+            Trigger1.GetComponent<Collider>().enabled = true;
+            Trigger2.GetComponent<Collider>().enabled = true;
+            Trigger3.GetComponent<Collider>().enabled = true;
+            Trigger4.GetComponent<Collider>().enabled = true;
 
         }
 

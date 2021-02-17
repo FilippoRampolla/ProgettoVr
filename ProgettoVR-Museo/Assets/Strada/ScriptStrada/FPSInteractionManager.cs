@@ -19,6 +19,7 @@ public class FPSInteractionManager : MonoBehaviour
     private Grabbable _grabbedObject = null;
 
     public GameObject Instruct;
+    public GameObject Instructdoor;
 
 
     void Start()
@@ -59,6 +60,20 @@ public class FPSInteractionManager : MonoBehaviour
             else
             {
                 Instruct.SetActive(false);
+            }
+        }
+
+        if (Physics.Raycast(_fpsCameraT.position, _fpsCameraT.forward, out hit))
+        {
+            Debug.Log(hit.transform.name);
+            DoorIstruction target = hit.transform.GetComponent<DoorIstruction>();
+            if (target != null)
+            {
+                Instructdoor.SetActive(true);
+            }
+            else
+            {
+                Instructdoor.SetActive(false);
             }
         }
 
@@ -148,4 +163,6 @@ public class FPSInteractionManager : MonoBehaviour
             }
         }
     }
+
+   
 }

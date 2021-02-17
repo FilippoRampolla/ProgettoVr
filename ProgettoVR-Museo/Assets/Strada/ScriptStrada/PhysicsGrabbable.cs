@@ -8,7 +8,10 @@ public class PhysicsGrabbable : Grabbable
 {
     private Rigidbody _rigidbody;
     private Collider _collider;
-    
+
+
+    public GameObject button;
+    public GameObject luci;
 
     protected override void Start ()
     {
@@ -24,6 +27,9 @@ public class PhysicsGrabbable : Grabbable
         _collider.enabled = false;
         _rigidbody.isKinematic = true;
         GetComponent<Rigidbody>().DOPause();
+        button.GetComponent<Button3D>().enabled = true;
+        button.GetComponent<Button3DInteractable>().enabled = true;
+        luci.SetActive(true);
 
 
     }
