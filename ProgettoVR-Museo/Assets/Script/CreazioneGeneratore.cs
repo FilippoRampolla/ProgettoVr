@@ -33,10 +33,12 @@ public class CreazioneGeneratore : MonoBehaviour
                 }
             else
             {
+                inv.SetActive(false);
                 camera2.SetActive(true);
                 fps.SetActive(false);
                 flag = 0;
                 inv.GetComponent<Inventory>().enabled = true;
+                inv.GetComponent<CreazioneGeneratore>().enabled = false;
 
                 // Debug.Log("out");
             }
