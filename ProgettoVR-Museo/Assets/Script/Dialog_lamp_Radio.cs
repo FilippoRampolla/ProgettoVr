@@ -20,19 +20,22 @@ public class Dialog_lamp_Radio : MonoBehaviour
     public GameObject start;
 
 
-    private void OnTriggerEnter(Collider other)
+    //private void OnTriggerEnter(Collider other)
+    //{
+    private void Start()
     {
-
-        StartCoroutine(Type());
+        
+    
+    StartCoroutine(Type());
         start.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         //this.gameObject.GetComponent<BoxCollider>().enabled = false;
         NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
+    }
+    // }  
 
-    }  
-    
     void Update()
     {
        

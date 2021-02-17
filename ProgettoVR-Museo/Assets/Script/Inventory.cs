@@ -17,7 +17,8 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown("k") )
         {
-            if (flag == 0) { 
+            if (flag == 0) 
+            { 
             camera.SetActive(true);
             fps.SetActive(false);
             inv.SetActive(true);
