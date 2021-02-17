@@ -26,6 +26,8 @@ public class Dialog_lamp_Radio : MonoBehaviour
     public GameObject Trigger3;
     public GameObject Trigger4;
 
+    public GameObject invent;
+
     //private void OnTriggerEnter(Collider other)
     //{
     private void Start()
@@ -39,6 +41,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
         //fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         //this.gameObject.GetComponent<BoxCollider>().enabled = false;
         NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
+        invent.SetActive(false);
     }
     // }  
 
@@ -84,6 +87,8 @@ public class Dialog_lamp_Radio : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Destroy(NPC);
             Instantiate(NPC, pos.position, pos.rotation);
+
+            invent.SetActive(true);
             
 
             Trigger1.GetComponent<Collider>().enabled = true;

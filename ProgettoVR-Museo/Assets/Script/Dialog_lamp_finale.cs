@@ -22,6 +22,8 @@ public class Dialog_lamp_finale : MonoBehaviour
 
     public GameObject item;
 
+    public GameObject invent;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,7 +35,7 @@ public class Dialog_lamp_finale : MonoBehaviour
         fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
         NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
-
+        invent.SetActive(false);
     }  
     
     void Update()
@@ -77,7 +79,8 @@ public class Dialog_lamp_finale : MonoBehaviour
             inv.GetComponent<Inventory>().enabled = false;
             inv.GetComponent<CreazioneGeneratore>().enabled = true;
             item.GetComponent<ItemSlot>().enabled = true;
-            
+            invent.SetActive(true);
+
 
         }
 

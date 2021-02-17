@@ -19,6 +19,8 @@ public class Dialog_lamp : MonoBehaviour
     public GameObject continueButton;
     public GameObject start;
 
+    public GameObject inventory;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,6 +32,7 @@ public class Dialog_lamp : MonoBehaviour
         fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
         NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
+        inventory.SetActive(false);
        
 
     }  
@@ -75,6 +78,7 @@ public class Dialog_lamp : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             //NPC.GetComponent<NPCFollow>().enabled = false;
             NPC.GetComponent<Animation>().CrossFadeQueued("Happy Idle");
+            inventory.SetActive(true);
 
         }
 
