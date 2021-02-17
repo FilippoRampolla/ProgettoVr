@@ -18,7 +18,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
     public GameObject fps;
     public GameObject continueButton;
     public GameObject start;
-
+    public GameObject cam;
 
     //private void OnTriggerEnter(Collider other)
     //{
@@ -30,7 +30,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
         start.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        fps.GetComponent<FirstPersonCharacterController>().enabled = false;
+        //fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         //this.gameObject.GetComponent<BoxCollider>().enabled = false;
         NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
     }
@@ -71,9 +71,10 @@ public class Dialog_lamp_Radio : MonoBehaviour
             textDisplay.text = "";
             continueButton.SetActive(false);
             start.SetActive(false);
-            fps.GetComponent<FirstPersonCharacterController>().enabled = true;
+            // fps.GetComponent<FirstPersonCharacterController>().enabled = true;
+            fps.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
-           NPC.GetComponent<NPCFollow>().enabled = true;
+            NPC.GetComponent<NPCFollow>().enabled = true;
 
         }
 

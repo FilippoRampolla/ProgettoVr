@@ -12746,13 +12746,14 @@ GameObject:
   - component: {fileID: 1018632986}
   - component: {fileID: 1018632985}
   - component: {fileID: 1018632984}
+  - component: {fileID: 1018632987}
   m_Layer: 0
   m_Name: CameraRadioSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1018632984
 AudioListener:
   m_ObjectHideFlags: 0
@@ -12818,6 +12819,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: -2.7900002, z: 0}
+--- !u!114 &1018632987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018632983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c446e4b77e06c4c9d089e21d71e0d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 2145547843}
+  sentences:
+  - gggggggggg
+  - gggggggg
+  typingSpeed: 0.02
+  NPC: {fileID: 499218199}
+  fps: {fileID: 1609784216}
+  continueButton: {fileID: 1975939719}
+  start: {fileID: 955711272}
+  cam: {fileID: 0}
 --- !u!1 &1029030168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3556649350350886081, guid: dfc5186ed0ff81e4dac53d116d025c91,
@@ -18524,7 +18547,6 @@ GameObject:
   - component: {fileID: 1455662516}
   - component: {fileID: 1455662520}
   - component: {fileID: 1455662522}
-  - component: {fileID: 1455662521}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -18627,27 +18649,6 @@ MonoBehaviour:
   inv: {fileID: 1970012206}
   camera: {fileID: 1289632059}
   fps: {fileID: 1609784216}
---- !u!114 &1455662521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455662515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90c446e4b77e06c4c9d089e21d71e0d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textDisplay: {fileID: 2145547843}
-  sentences:
-  - gggggggggg
-  - gggggggg
-  typingSpeed: 0.02
-  NPC: {fileID: 499218199}
-  fps: {fileID: 1609784216}
-  continueButton: {fileID: 1975939719}
-  start: {fileID: 955711272}
 --- !u!114 &1455662522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18660,7 +18661,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9329bd02c64e1b24b87a5f8715def707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 1018632983}
+  camera1: {fileID: 1289632059}
+  camera2: {fileID: 1018632983}
+  fps: {fileID: 1609784216}
+  inv: {fileID: 1970012206}
 --- !u!1001 &1455684287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24058,7 +24062,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1455662521}
+      - m_Target: {fileID: 0}
         m_MethodName: NextSentences
         m_Mode: 1
         m_Arguments:
