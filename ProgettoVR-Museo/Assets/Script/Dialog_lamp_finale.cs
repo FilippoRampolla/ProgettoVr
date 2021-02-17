@@ -14,11 +14,13 @@ public class Dialog_lamp_finale : MonoBehaviour
     public float typingSpeed;
     public GameObject NPC;
 
-    public GameObject camera;
+    //public GameObject camera;
     public GameObject fps;
     public GameObject continueButton;
     public GameObject start;
     public GameObject inv;
+
+    public GameObject item;
 
 
     private void OnTriggerEnter(Collider other)
@@ -74,6 +76,8 @@ public class Dialog_lamp_finale : MonoBehaviour
             // NPC.GetComponent<NPCFollow>().enabled = true;
             inv.GetComponent<Inventory>().enabled = false;
             inv.GetComponent<CreazioneGeneratore>().enabled = true;
+            item.GetComponent<ItemSlot>().enabled = true;
+            
 
         }
 
