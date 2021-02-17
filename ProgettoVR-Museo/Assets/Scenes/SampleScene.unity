@@ -8934,6 +8934,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diapason: {fileID: 3846267437946836835, guid: 3b640a3cd49b6764f88b8a5b049d96df,
     type: 3}
+  camera: {fileID: 0}
+  fps: {fileID: 1609784216}
 --- !u!114 &615443261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21454,6 +21456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1524833557}
+  - component: {fileID: 1524833558}
   m_Layer: 0
   m_Name: Audiomanager
   m_TagString: Untagged
@@ -21475,6 +21478,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1524833558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524833556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6bf81a0db9d0d43abf04b5dcb92691, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: door
+    clip: {fileID: 8300000, guid: 6a9acab2088743e47bffc4c7d8cd2fd8, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: radio
+    clip: {fileID: 8300000, guid: 036b8cffef303c7449d1ed3a851ab3f0, type: 3}
+    volume: 0.209
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &1530991954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6245719286280297071, guid: dfc5186ed0ff81e4dac53d116d025c91,
@@ -22477,7 +22503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.4
+      value: 5.93
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalRotation.x
@@ -22603,6 +22629,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructions: {fileID: 1584402977}
+--- !u!81 &1609784224
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609784216}
+  m_Enabled: 1
 --- !u!1 &1610494712
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,9 @@ public class Esperimento_diapason : MonoBehaviour
 
     public GameObject diapason;
     private Transform posizioneD;
+
+    public GameObject camera;
+    public GameObject fps;
    // private Transform posizioneM;
    // public GameObject martello;
    // private Transform posizioneS;
@@ -26,6 +29,9 @@ public class Esperimento_diapason : MonoBehaviour
     {
         if (Input.GetKeyDown("l"))
         {
+
+            fps.SetActive(true);
+            camera.SetActive(false);
             Instantiate(diapason, posizioneD.position, posizioneD.rotation);
             //Instantiate(martello, posizioneM.position, posizioneM.rotation);
             //Instantiate(sfera, posizioneS.position, posizioneS.rotation);
