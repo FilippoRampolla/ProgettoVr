@@ -6282,6 +6282,7 @@ GameObject:
   - component: {fileID: 7341645605270352911}
   - component: {fileID: 7091052555770205163}
   - component: {fileID: 7091052555770205162}
+  - component: {fileID: 1460813779763626102}
   m_Layer: 0
   m_Name: LIGHTBULB@Running
   m_TagString: Untagged
@@ -6402,7 +6403,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7973925967032889013}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69d0e93cedc9aa140bbc0c7d930cd7c9, type: 3}
   m_Name: 
@@ -6413,6 +6414,19 @@ MonoBehaviour:
   TheNPC: {fileID: 7973925967032889013}
   FollowSpeed: 1
   flag: 0
+--- !u!114 &1460813779763626102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973925967032889013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c16ef9e1d94a345babe6b77b166239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Npc: {fileID: 7973925967032889013}
 --- !u!1 &8141676883725804553
 GameObject:
   m_ObjectHideFlags: 0
