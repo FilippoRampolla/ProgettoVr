@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Dialog_lamp_finale : MonoBehaviour
+public class Dialog_lamp_Radio : MonoBehaviour
 
 
 {
@@ -14,11 +14,10 @@ public class Dialog_lamp_finale : MonoBehaviour
     public float typingSpeed;
     public GameObject NPC;
 
-    public GameObject camera;
+    
     public GameObject fps;
     public GameObject continueButton;
     public GameObject start;
-    public GameObject inv;
 
 
     private void OnTriggerEnter(Collider other)
@@ -29,7 +28,7 @@ public class Dialog_lamp_finale : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         fps.GetComponent<FirstPersonCharacterController>().enabled = false;
-        this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        //this.gameObject.GetComponent<BoxCollider>().enabled = false;
         NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
 
     }  
@@ -71,8 +70,7 @@ public class Dialog_lamp_finale : MonoBehaviour
             start.SetActive(false);
             fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
-            // NPC.GetComponent<NPCFollow>().enabled = true;
-            inv.GetComponent<CreazioneGeneratore>().enabled = true;
+           NPC.GetComponent<NPCFollow>().enabled = true;
 
         }
 
