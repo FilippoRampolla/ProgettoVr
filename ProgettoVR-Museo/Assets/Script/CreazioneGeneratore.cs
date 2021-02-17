@@ -5,7 +5,8 @@ using UnityEngine;
 public class CreazioneGeneratore : MonoBehaviour
 {
    
-    public GameObject camera;
+    public GameObject camera1;
+    public GameObject camera2;
     public GameObject fps;
     public GameObject inv;
 
@@ -21,7 +22,7 @@ public class CreazioneGeneratore : MonoBehaviour
             if (flag == 0)
             {
                 
-                    camera.SetActive(true);
+                    camera1.SetActive(true);
                     fps.SetActive(false);
                     inv.SetActive(true);
                     Cursor.lockState = CursorLockMode.None;
@@ -32,7 +33,7 @@ public class CreazioneGeneratore : MonoBehaviour
                 }
             else
             {
-                camera.SetActive(true);
+                camera2.SetActive(true);
                 fps.SetActive(false);
                 flag = 0;
                 inv.GetComponent<Inventory>().enabled = true;
