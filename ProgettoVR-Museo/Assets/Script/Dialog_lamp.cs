@@ -60,14 +60,15 @@ public class Dialog_lamp : MonoBehaviour
     public void NextSentences()
     {
         continueButton.SetActive(false);
+        
 
-        if(index< sentences.Length-1)
+        if (index< sentences.Length-1)
 
         {
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
-            
+            NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
 
         } else
         {
@@ -77,7 +78,7 @@ public class Dialog_lamp : MonoBehaviour
             fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             //NPC.GetComponent<NPCFollow>().enabled = false;
-            NPC.GetComponent<Animation>().CrossFadeQueued("Happy Idle");
+            NPC.GetComponent<idleLamp>().enabled = true ;
             inventory.SetActive(true);
 
         }

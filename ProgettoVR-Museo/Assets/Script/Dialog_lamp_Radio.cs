@@ -38,6 +38,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
         start.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        NPC.GetComponent<idleLamp>().enabled = false;
         //fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         //this.gameObject.GetComponent<BoxCollider>().enabled = false;
         NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
@@ -75,6 +76,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
+            NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
         } else
         {
             textDisplay.text = "";

@@ -34,7 +34,9 @@ public class Dialog_lamp_finale : MonoBehaviour
         Cursor.visible = true;
         fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        NPC.GetComponent<idleLamp>().enabled = false;
         NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
+        
         invent.SetActive(false);
     }  
     
@@ -75,7 +77,7 @@ public class Dialog_lamp_finale : MonoBehaviour
             start.SetActive(false);
             fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
-            // NPC.GetComponent<NPCFollow>().enabled = true;
+            NPC.GetComponent<idleLamp>().enabled = false;
             inv.GetComponent<Inventory>().enabled = false;
             inv.GetComponent<CreazioneGeneratore>().enabled = true;
             item.GetComponent<ItemSlot>().enabled = true;

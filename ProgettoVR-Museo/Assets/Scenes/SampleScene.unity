@@ -13587,7 +13587,7 @@ MonoBehaviour:
   Trigger2: {fileID: 142709532}
   Trigger3: {fileID: 1135238000}
   Trigger4: {fileID: 2136211653}
-  invent: {fileID: 0}
+  invent: {fileID: 1455662515}
 --- !u!1 &1029030168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3556649350350886081, guid: dfc5186ed0ff81e4dac53d116d025c91,
@@ -21186,7 +21186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.3
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21194,7 +21194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43
+      value: -14.4
       objectReference: {fileID: 0}
     - target: {fileID: 4941942678163452, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
       propertyPath: m_LocalRotation.x
@@ -22293,7 +22293,7 @@ MonoBehaviour:
   start: {fileID: 1661243168}
   inv: {fileID: 1455662515}
   item: {fileID: 1743714182}
-  invent: {fileID: 0}
+  invent: {fileID: 1455662515}
 --- !u!65 &1698129799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26667,7 +26667,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366455555183060305}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 437b9ac6a2b32374799e5a0d981df847, type: 2}
   m_CullingMode: 0
@@ -27638,6 +27638,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7091052555321369842}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &919132149520288328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149520288327}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c16ef9e1d94a345babe6b77b166239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Npc: {fileID: 919132149520288327}
 --- !u!1 &3225070717856082458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1540238433413799422, guid: 3b640a3cd49b6764f88b8a5b049d96df,
