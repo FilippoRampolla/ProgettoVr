@@ -43,6 +43,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
         //this.gameObject.GetComponent<BoxCollider>().enabled = false;
         NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
         invent.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("radio");
     }
     // }  
 

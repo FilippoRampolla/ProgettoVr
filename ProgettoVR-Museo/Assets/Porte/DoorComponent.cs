@@ -12,7 +12,12 @@ public class DoorComponent : MonoBehaviour
             instructions.SetActive(true);
             Animator anim = other.GetComponentInChildren<Animator>();
             if (Input.GetKeyDown(KeyCode.E))
+            {
                 anim.SetTrigger("OpenClose");
+                FindObjectOfType<AudioManager>().Play("door");
+            }
+                
+
 
         }
     }
