@@ -12983,6 +12983,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: atrio
       objectReference: {fileID: 0}
+    - target: {fileID: 8067122037690803253, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 37.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f58f5ea0033277344923438f4771a51c, type: 3}
 --- !u!1001 &1032940034
