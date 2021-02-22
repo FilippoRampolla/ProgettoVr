@@ -12968,6 +12968,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7029948723529949830, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: tappeto
+      objectReference: {fileID: 0}
+    - target: {fileID: -4820990074894390757, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: muro_infondo
+      objectReference: {fileID: 0}
+    - target: {fileID: -4322005600336000840, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: soffitto
+      objectReference: {fileID: 0}
     - target: {fileID: -4292154010595695564, guid: f58f5ea0033277344923438f4771a51c,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -12977,6 +12992,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -24.78
+      objectReference: {fileID: 0}
+    - target: {fileID: -3879267144533835285, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: pavimento
+      objectReference: {fileID: 0}
+    - target: {fileID: 148134813757665273, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: muro_orologio
       objectReference: {fileID: 0}
     - target: {fileID: 527232912248866306, guid: f58f5ea0033277344923438f4771a51c,
         type: 3}
@@ -12988,15 +13013,45 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.00010384
       objectReference: {fileID: 0}
+    - target: {fileID: 822069454114236636, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: soffitoo1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f58f5ea0033277344923438f4771a51c,
         type: 3}
       propertyPath: m_Name
       value: atrio
       objectReference: {fileID: 0}
+    - target: {fileID: 1473946179499700887, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: pavimento_sopra1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491078075220591895, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: muro2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326291198300068395, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: muro1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690309793818984216, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: muro_infondo1
+      objectReference: {fileID: 0}
     - target: {fileID: 8067122037690803253, guid: f58f5ea0033277344923438f4771a51c,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140448155322901209, guid: f58f5ea0033277344923438f4771a51c,
+        type: 3}
+      propertyPath: m_Name
+      value: pavimento_sopra
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f58f5ea0033277344923438f4771a51c, type: 3}
