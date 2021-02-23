@@ -19506,7 +19506,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: aca9a18f5c8c82147a48b9f79d20ecde, type: 2}
+      objectReference: {fileID: 2100000, guid: d76672e4f9ccc19439fb7cd1b877d6ae, type: 2}
     - target: {fileID: 919132149155446097, guid: 1df3bcdd27c975243bac271704eb0db2,
         type: 3}
       propertyPath: m_Name
@@ -29454,6 +29454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stanzeNOatrio
       objectReference: {fileID: 0}
+    - target: {fileID: 1855285484418057815, guid: 403bd0856b5b9da499a54e8a528f28e2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee9096abf1c03eb4096649d9ebda879c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 403bd0856b5b9da499a54e8a528f28e2, type: 3}
 --- !u!224 &2075215364 stripped
