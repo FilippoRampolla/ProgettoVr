@@ -6,7 +6,22 @@ ModelImporter:
   - first:
       74: -5323088739929027625
     second: campana.005|campana.004Action.002
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bell.001
+    second: {fileID: 2100000, guid: 91a08fd38317daa4ea5bfdc47d128b05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bell_structure.001
+    second: {fileID: 2100000, guid: 15f77131cb481b94e81f2fac9248f211, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pulsantiera_campana
+    second: {fileID: 2100000, guid: b95cbc77e4b2e5942b58c36cacc29f2b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
