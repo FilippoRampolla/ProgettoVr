@@ -3,7 +3,27 @@ guid: 5512487458ddb024c80c38612ebe053a
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colonnina_pulsante
+    second: {fileID: 2100000, guid: aa91840639915614b9d2d79e07557734, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: piatto_pulsante
+    second: {fileID: 2100000, guid: 682bf969c04f92c47afa6fedcf998360, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pulsante.002
+    second: {fileID: 2100000, guid: 0a3f8466161c1494690754c76e20e7be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: viti_collonina_pulsante
+    second: {fileID: 2100000, guid: 2a188c1064deeae4baa6c22d2674094a, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
