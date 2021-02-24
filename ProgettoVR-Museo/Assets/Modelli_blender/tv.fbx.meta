@@ -3,7 +3,87 @@ guid: 0f8023f4755e239499226d474fb29b2d
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: e51bfbbbc2ab0ad4ab235dc71b25d487, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: f502c136848a64f429a1099e31502300, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: f152cf9837e2a4c49819c364f1a45f35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: bf98764811b9bb640a17f44ffe62d1d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: dfc23ee444624834aa2ad4088c84bb07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 8103cb35019d9354194c26536a351a53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 83f6c3ea8c9137045b49fa7745e1b4b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_Black
+    second: {fileID: 2100000, guid: 02dcccb27331b81458a48ed3f6787dc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_Black.002
+    second: {fileID: 2100000, guid: 802569051d7a2734da6857e83876ffa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_Black.003
+    second: {fileID: 2100000, guid: 1eb5eb24c6ffca146bd1f1d6e92d230d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_Black._lines
+    second: {fileID: 2100000, guid: ae4a7fe73d47094468ced60a65510c2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_Metal
+    second: {fileID: 2100000, guid: 0e9e46a2780f7504b97fe83c48c5ed88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_Metal.001
+    second: {fileID: 2100000, guid: b8e91260b5433194f9c3db1bf8bab931, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_Plastic
+    second: {fileID: 2100000, guid: f0e1c163e243c8649bf900d96be37975, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_Plastic.001
+    second: {fileID: 2100000, guid: 846b2ed6d72ae6d4b93dc022fe498d9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV_Wood
+    second: {fileID: 2100000, guid: a11938640af5d374084940abf2d82b4d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
