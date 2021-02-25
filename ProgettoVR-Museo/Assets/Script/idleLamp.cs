@@ -12,6 +12,7 @@ public class idleLamp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Npc.GetComponent<Animation>().Play("Happy Idle");
+        Npc.GetComponent<Animation>().Play("mixamo.com");
+        Debug.Log("ci sono");
     }
 }
