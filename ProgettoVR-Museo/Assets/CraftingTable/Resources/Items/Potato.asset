@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: cerchio
+  m_Name: Potato
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemIcon: {fileID: 21300000, guid: 02811814af4b9de4aad6c22a1a41cfd9, type: 3}
-  itemName: cerchio
+  itemIcon: {fileID: 0}
+  itemName: 
