@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 1978397180992901267}
   - component: {fileID: 409644487520568396}
   - component: {fileID: 6877310118212454272}
-  - component: {fileID: 5790501020300847553}
+  - component: {fileID: 2352723121482420299}
   m_Layer: 0
   m_Name: LIGHTBULB@Walking (1)
   m_TagString: Untagged
@@ -601,7 +601,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679534110425046759}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 0}
   m_Animations:
@@ -639,12 +639,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d0e93cedc9aa140bbc0c7d930cd7c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThePlayer: {fileID: 0}
+  ThePlayer: {fileID: 1885017543988998, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
   targetDistance: 0
   AllowedDistance: 5
   TheNPC: {fileID: 679534110425046759}
-  FollowSpeed: 0.2
---- !u!95 &5790501020300847553
+  FollowSpeed: 3
+--- !u!95 &2352723121482420299
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -654,7 +654,7 @@ Animator:
   m_GameObject: {fileID: 679534110425046759}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e87926a62d15b9343a101c899104d3dd, type: 3}
-  m_Controller: {fileID: 9100000, guid: eb7abb27dd822474abce877dd81384be, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7c0e43666dbb66a46a9c2e9f4b56fce8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
