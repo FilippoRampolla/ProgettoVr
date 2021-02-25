@@ -6,11 +6,11 @@ public class NPCFollow : MonoBehaviour
 {
     public GameObject ThePlayer;
     public float targetDistance;
-    public float AllowedDistance = 5;
+    public float AllowedDistance = 1;
     public GameObject TheNPC;
     public float FollowSpeed;
     public RaycastHit Shot;
-    public int flag = 0;
+    
     
     
     void Update()
@@ -22,8 +22,8 @@ public class NPCFollow : MonoBehaviour
             if (targetDistance >= AllowedDistance)
             {
                 FollowSpeed = 0.02f;
-                TheNPC.GetComponent<Animation>().Play("Walking");
-                transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, FollowSpeed);
+                TheNPC.GetComponent<Animator>().Play("Walking");
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(ThePlayer.transform.position.x, transform.position.y, ThePlayer.transform.position.z), FollowSpeed);
             }
             else
             {
