@@ -60,12 +60,15 @@ public class FPSInteractionManager : MonoBehaviour
             if (target != null)
             {
                 Instruct.SetActive(true);
-                var tween = Chiodo.transform.DOScale(3, 1);
+                //Chiodo.GetComponent<Animator>().enabled = true;
+                Chiodo.GetComponent<Animator>().Play("GlowUp");
+                Patata.GetComponent<Animator>().Play("patata");
             }
             else
             {
                 Instruct.SetActive(false);
-                var tween = Chiodo.transform.DOScale(-3, 1);
+                //Chiodo.GetComponent<Animator>().enabled = false;
+                //Chiodo.GetComponent<Animator>().Play("GLowCLose");
             }
         }
 
