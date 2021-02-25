@@ -14,7 +14,7 @@ public class Dialog_lamp : MonoBehaviour
     public float typingSpeed;
     public GameObject NPC;
 
-    public GameObject camera;
+    
     public GameObject fps;
     public GameObject continueButton;
     public GameObject start;
@@ -24,14 +24,14 @@ public class Dialog_lamp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        NPC.GetComponent<Animation>().Stop("Sad Idle");
+        //NPC.GetComponent<Animation>().Stop("Sad Idle");
         StartCoroutine(Type());
         start.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
+        NPC.GetComponent<Animation>().Play("Talking");
         inventory.SetActive(false);
        
 
@@ -68,7 +68,7 @@ public class Dialog_lamp : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
-            NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
+            NPC.GetComponent<Animation>().Play("Talking");
 
         } else
         {
