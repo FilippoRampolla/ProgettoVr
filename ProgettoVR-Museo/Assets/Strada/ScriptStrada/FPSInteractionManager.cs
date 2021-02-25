@@ -62,7 +62,7 @@ public class FPSInteractionManager : MonoBehaviour
                 Instruct.SetActive(true);
                 //Chiodo.GetComponent<Animator>().enabled = true;
                 Chiodo.GetComponent<Animator>().Play("GlowUp");
-                Patata.GetComponent<Animator>().Play("patata");
+                Patata.GetComponent<Animator>().Play("Patata");
             }
             else
             {
