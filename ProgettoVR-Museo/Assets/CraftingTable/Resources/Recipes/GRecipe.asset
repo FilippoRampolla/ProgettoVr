@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: GRecipe
   m_EditorClassIdentifier: 
   topRow:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: c3f405be505ef76498a17560a06cab86, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   midRow:
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 585e4a0add279a5439b7d68a9b520222, type: 2}
   - {fileID: 0}
   bottomRow:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  output: {fileID: 0}
+  - {fileID: 11400000, guid: 697a17f19fcf7a64198877313f6f1e6e, type: 2}
+  output: {fileID: 11400000, guid: e2b7455ce25162e40b0ed643cb211c9d, type: 2}

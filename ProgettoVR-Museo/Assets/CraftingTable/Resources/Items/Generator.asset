@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Generator
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
-  itemIcon: {fileID: 0}
-  itemName: 
+  itemIcon: {fileID: 21300000, guid: d6de053992a058b409769533d65118de, type: 3}
+  itemName: Generetor
