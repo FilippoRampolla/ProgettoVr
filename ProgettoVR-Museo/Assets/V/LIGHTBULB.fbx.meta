@@ -1,11 +1,8 @@
 fileFormatVersion: 2
-guid: 771bf25133cab1b49a23d8dee13a6a6a
+guid: aa2bf605d1b216f419545b428a96acc3
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable:
-  - first:
-      74: -203655887218126122
-    second: mixamo.com
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -71,7 +68,12 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - 9202cc722133798418c01eb67aefb810
+  - 771bf25133cab1b49a23d8dee13a6a6a
+  - 9e6ec5eeb42a6c349b180946d51b32d3
+  - 58e35f76e7884684d91f1055ca53bfea
+  - e87926a62d15b9343a101c899104d3dd
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -87,11 +89,11 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0
