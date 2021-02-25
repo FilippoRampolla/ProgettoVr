@@ -17,7 +17,7 @@ public class BellAnim : MonoBehaviour
     public GameObject cam;
     public GameObject Fp;
 
-    public GameObject Npcnew;
+   
     public Transform pos;
     public GameObject Npc;
     public GameObject campan;
@@ -31,8 +31,8 @@ public class BellAnim : MonoBehaviour
         var tween = transform.DOMoveY(2.3f , 5f);
         radio.SetActive(false);
         Facoltativo.SetActive(true);
-        Destroy(Npc);
-        Instantiate(Npcnew, pos.position, pos.rotation);
+        Npc.transform.position = Vector3.Lerp(Npc.transform.position, pos.position, Time.time);
+        
         cam.SetActive(true);
         Fp.SetActive(false);
         campan.GetComponent<DialogBell>().enabled = true;

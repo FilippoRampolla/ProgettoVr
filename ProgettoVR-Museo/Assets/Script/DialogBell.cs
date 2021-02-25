@@ -68,7 +68,7 @@ public class DialogBell : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
-            NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
+            NPC.GetComponent<Animation>().Play("Talking");
         }
         else
         {
@@ -80,8 +80,7 @@ public class DialogBell : MonoBehaviour
             fps.SetActive(true);
             cam.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
-            Destroy(NPC);
-            Instantiate(NPCnew, pos.position, pos.rotation);
+            NPC.transform.position = Vector3.Lerp(NPC.transform.position, pos.position, Time.time);
 
             invent.SetActive(true);
 
