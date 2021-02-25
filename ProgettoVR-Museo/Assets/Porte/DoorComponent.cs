@@ -9,7 +9,7 @@ public class DoorComponent : MonoBehaviour
     {
         if (other.tag == "Door")
         {
-            instructions.SetActive(true);
+            //instructions.SetActive(true);
             Animator anim = other.GetComponentInChildren<Animator>();
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -23,10 +23,10 @@ public class DoorComponent : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Door")
-        {
-            instructions.SetActive(false);
+       // if (other.tag == "Door")
+        //{
+            //instructions.SetActive(false);
 
-        }
+        //}
     }
 }
