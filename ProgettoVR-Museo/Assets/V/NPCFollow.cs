@@ -19,7 +19,7 @@ public class NPCFollow : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Shot));
         {
             targetDistance = Shot.distance;
-            if (targetDistance > 1 || targetDistance<0)
+            if (targetDistance > 1 || targetDistance<0.75)
             {
                 FollowSpeed = 0.02f;
                 TheNPC.GetComponent<Animator>().Play("Walking");

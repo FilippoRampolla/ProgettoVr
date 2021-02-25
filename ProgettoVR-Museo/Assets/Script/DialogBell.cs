@@ -81,6 +81,8 @@ public class DialogBell : MonoBehaviour
             cam.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             NPC.transform.position = Vector3.Lerp(NPC.transform.position, pos.position, Time.time);
+            NPC.GetComponent<Animator>().enabled = true;
+            NPC.GetComponent<NPCFollow>().enabled = true;
 
             invent.SetActive(true);
 
