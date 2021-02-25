@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using DG.Tweening;
 
 public class FPSInteractionManager : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class FPSInteractionManager : MonoBehaviour
 
     public GameObject Instruct;
     public GameObject Instructdoor;
+
+    public GameObject Chiodo;
+    public GameObject Patata;
 
 
     void Start()
@@ -56,10 +60,12 @@ public class FPSInteractionManager : MonoBehaviour
             if (target != null)
             {
                 Instruct.SetActive(true);
+                var tween = Chiodo.transform.DOScale(3, 1);
             }
             else
             {
                 Instruct.SetActive(false);
+                var tween = Chiodo.transform.DOScale(-3, 1);
             }
         }
 
