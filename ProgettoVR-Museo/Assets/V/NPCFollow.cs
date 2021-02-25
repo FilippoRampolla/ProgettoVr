@@ -10,9 +10,9 @@ public class NPCFollow : MonoBehaviour
     public GameObject TheNPC;
     public float FollowSpeed;
     public RaycastHit Shot;
-    
-    
-    
+
+
+   
     void Update()
     {
         transform.LookAt(ThePlayer.transform);

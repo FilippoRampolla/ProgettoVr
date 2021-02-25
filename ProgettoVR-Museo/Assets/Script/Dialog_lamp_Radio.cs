@@ -40,7 +40,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
         NPC.GetComponent<idleLamp>().enabled = false;
         //fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         //this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        NPC.GetComponent<Animation>().Play("Talking1");
+        NPC.GetComponent<Animation>().Play("Stand");
         invent.SetActive(false);
         FindObjectOfType<AudioManager>().Play("radio");
     }
@@ -76,7 +76,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
-            NPC.GetComponent<Animation>().CrossFadeQueued("Talking");
+            NPC.GetComponent<Animation>().Play("Talking");
         } else
         {
             textDisplay.text = "";
@@ -87,14 +87,21 @@ public class Dialog_lamp_Radio : MonoBehaviour
             fps.SetActive(true);
             cam.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
-            Destroy(NPC);
-            Instantiate(NPCnew, pos.position, pos.rotation);
+            // Destroy(NPC);
+            NPC.transform.position = Vector3.Lerp(NPC.transform.position, pos.position, Time.time);
+            //Instantiate(NPCnew, pos.position, pos.rotation);
 
             invent.SetActive(true);
+
+            NPC.GetComponent<NPCFollow>().enabled = true;
             
+            NPC.GetComponent<Animator>().enabled = true;
+
 
             Trigger1.GetComponent<Collider>().enabled = true;
             Trigger2.GetComponent<Collider>().enabled = true;
+
+            
             
 
 
