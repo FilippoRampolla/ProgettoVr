@@ -27,29 +27,10 @@ public class NPCFollow : MonoBehaviour
             }
             else
             {
+                
                 FollowSpeed = 0;
-               // if (flag==0)
-               // { TheNPC.GetComponent<Animation>().Play("Happy Idle");
-                     
-               // }
-               /// else
-               // {
-                   
-               //     TheNPC.GetComponent<Animation>().CrossFadeQueued("Talking");
-               //     TheNPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
+                TheNPC.GetComponent<Animation>().Play("Happy Idle");
 
-
-               // }
-
-                //if (Input.GetKeyDown("i"))
-                //{
-                  //  flag = 1;
-
-               // }
-               // if(Input.GetKeyDown("c"))
-               // {
-               //     flag = 0;
-               // }
             }
         }
         

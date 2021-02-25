@@ -6,7 +6,47 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LampadinaBULBO
+    second: {fileID: 2100000, guid: 177f510a565bd3e4f8c23019fa96bf00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: 392268d6c63f7b245859b869173d3b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.021
+    second: {fileID: 2100000, guid: 8d1cbb91c6e095f4f9c72bd2436913a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_argento
+    second: {fileID: 2100000, guid: cbdad81a1b3c6e64bb3eaa549731f37e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_filamento
+    second: {fileID: 2100000, guid: 0607d235e544c9f429f90119567d0feb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_oro
+    second: {fileID: 2100000, guid: 74366d95b7758eb44b216a8f25528ded, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_testa
+    second: {fileID: 2100000, guid: 8125ecf1072dfc143a0135b077bb7199, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Materiasl_centro
+    second: {fileID: 2100000, guid: 9bbefa21041039746b3841d3e6872a64, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

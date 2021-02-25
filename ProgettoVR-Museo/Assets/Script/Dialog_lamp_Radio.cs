@@ -28,8 +28,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
     public GameObject invent;
     public GameObject NPCnew;
 
-    //private void OnTriggerEnter(Collider other)
-    //{
+    
     private void Start()
     {
         
@@ -41,11 +40,11 @@ public class Dialog_lamp_Radio : MonoBehaviour
         NPC.GetComponent<idleLamp>().enabled = false;
         //fps.GetComponent<FirstPersonCharacterController>().enabled = false;
         //this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        NPC.GetComponent<Animation>().CrossFadeQueued("Talking1");
+        NPC.GetComponent<Animation>().Play("Talking1");
         invent.SetActive(false);
         FindObjectOfType<AudioManager>().Play("radio");
     }
-    // }  
+     
 
     void Update()
     {
@@ -84,7 +83,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
             continueButton.SetActive(false);
             start.SetActive(false);
             
-            // fps.GetComponent<FirstPersonCharacterController>().enabled = true;
+            
             fps.SetActive(true);
             cam.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
