@@ -498,8 +498,8 @@ GameObject:
   - component: {fileID: 154776056209146973}
   - component: {fileID: 1978397180992901267}
   - component: {fileID: 409644487520568396}
-  - component: {fileID: 6877310118212454272}
   - component: {fileID: 2352723121482420299}
+  - component: {fileID: -9210430772025326760}
   m_Layer: 0
   m_Name: LIGHTBULB@Walking (1)
   m_TagString: Untagged
@@ -627,23 +627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Npc: {fileID: 679534110425046759}
---- !u!114 &6877310118212454272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679534110425046759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69d0e93cedc9aa140bbc0c7d930cd7c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ThePlayer: {fileID: 1885017543988998, guid: 01cc8698cc73f634fbf8f69ec537eb22, type: 3}
-  targetDistance: 0
-  AllowedDistance: 5
-  TheNPC: {fileID: 679534110425046759}
-  FollowSpeed: 3
 --- !u!95 &2352723121482420299
 Animator:
   serializedVersion: 3
@@ -663,6 +646,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-9210430772025326760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679534110425046759}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d0e93cedc9aa140bbc0c7d930cd7c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThePlayer: {fileID: 0}
+  targetDistance: 0
+  AllowedDistance: 1
+  TheNPC: {fileID: 679534110425046759}
+  FollowSpeed: 3
 --- !u!1 &768525509536824764
 GameObject:
   m_ObjectHideFlags: 0
