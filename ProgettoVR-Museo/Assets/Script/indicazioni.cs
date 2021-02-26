@@ -18,12 +18,14 @@ public class indicazioni : MonoBehaviour
     public GameObject fps;
     public GameObject continueButton;
     public GameObject start;
+    public GameObject inv;
 
 
     private void OnTriggerEnter(Collider other)
     {
 
         StartCoroutine(Type());
+        inv.SetActive(false);
         start.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -72,7 +74,8 @@ public class indicazioni : MonoBehaviour
             fps.SetActive(true);
             camera.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
-            
+            inv.SetActive(true) ;
+
 
         }
     }

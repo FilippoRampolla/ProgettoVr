@@ -21,6 +21,7 @@ public class BellAnim : MonoBehaviour
     public Transform pos;
     public GameObject Npc;
     public GameObject campan;
+    public GameObject button;
     
     void Start()
     {
@@ -34,12 +35,14 @@ public class BellAnim : MonoBehaviour
         radio.SetActive(false);
         Facoltativo.SetActive(true);
         Npc.GetComponent<NPCFollow>().enabled = false;
+        Npc.GetComponent<Animator>().enabled = false;
         Npc.transform.position = Vector3.Lerp(Npc.transform.position, pos.position, Time.time);
         
         
         cam.SetActive(true);
         Fp.SetActive(false);
         campan.GetComponent<DialogBell>().enabled = true;
+        button.SetActive(false);
 
         trigger1.GetComponent<Collider>().enabled = true;
         trigger2.GetComponent<Collider>().enabled = true;

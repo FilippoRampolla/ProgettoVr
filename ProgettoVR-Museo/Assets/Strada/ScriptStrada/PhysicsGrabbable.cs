@@ -12,6 +12,7 @@ public class PhysicsGrabbable : Grabbable
 
     public GameObject button;
     public GameObject luci;
+    public GameObject canva;
 
     protected override void Start ()
     {
@@ -30,6 +31,7 @@ public class PhysicsGrabbable : Grabbable
         button.GetComponent<Button3D>().enabled = true;
         button.GetComponent<Button3DInteractable>().enabled = true;
         luci.SetActive(true);
+        canva.SetActive(true);
 
 
     }

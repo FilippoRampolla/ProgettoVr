@@ -34,7 +34,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
 
     public GameObject indicazioni;
     public GameObject generatore;
-
+    public GameObject light;
     private void Start()
     {
         Instantiate(generatore);
@@ -48,6 +48,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
         NPC.GetComponent<idleLamp>().enabled = false;
         NPC.GetComponent<Animation>().Play("idleTalk");
         invent.SetActive(false);
+        light.SetActive(true);
         
     }
      
