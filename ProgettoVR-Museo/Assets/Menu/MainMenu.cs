@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 
 public class MainMenu : MonoBehaviour {
+
+    public GameObject animator;
     public void Playgame()
 
-
     {
+        FadeTolevel();
         SceneManager.LoadScene("SampleScene");
     }
     public void Quitgame ()
@@ -18,7 +20,10 @@ public class MainMenu : MonoBehaviour {
         Application.Quit();
     }
 
- 
+ public void FadeTolevel ()
+    {
+        animator.GetComponent<Animator>().SetTrigger("fadeout");
+    }
 
 }
 

@@ -10,6 +10,9 @@ public class CutSceneIniziale : MonoBehaviour
     public GameObject canva;
     public GameObject soundClock;
 
+    public GameObject target;
+    public GameObject inventory;
+
     private void Start()
     {
         FindObjectOfType<AudioManager>().Play("sottofondo");
@@ -17,6 +20,7 @@ public class CutSceneIniziale : MonoBehaviour
         ThePlayer.SetActive(false);
         StartCoroutine(FinishCut());
         StartCoroutine(Offlight());
+        StartCoroutine(ding());
     }
     IEnumerator FinishCut()
     {
@@ -24,12 +28,21 @@ public class CutSceneIniziale : MonoBehaviour
         ThePlayer.SetActive(true);
         cutsceneCam.SetActive(false);
         canva.SetActive(true);
+        target.SetActive(true);
+        inventory.SetActive(true);
     }
     IEnumerator Offlight()
     {
-        yield return new WaitForSeconds(26);
+        yield return new WaitForSeconds(25);
         light.SetActive(false);
-        soundClock.GetComponent<AudioSource>().enabled = true;
         
+        
+    }
+    IEnumerator ding()
+    {
+        yield return new WaitForSeconds(22);
+      
+        soundClock.GetComponent<AudioSource>().enabled = true;
+
     }
 }
