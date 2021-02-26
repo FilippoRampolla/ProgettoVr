@@ -29,12 +29,17 @@ public class Dialog_lamp_Radio : MonoBehaviour
     public GameObject NPCnew;
     public GameObject radio;
 
-    
+    public Material bulb;
+    public Material wire;
+
+
     private void Start()
     {
-        
-    
-    StartCoroutine(Type());
+
+        bulb.EnableKeyword("_EMISSION");
+        wire.EnableKeyword("_EMISSION");
+
+        StartCoroutine(Type());
         start.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;

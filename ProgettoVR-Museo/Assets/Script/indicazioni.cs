@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Dialog_lamp_finale : MonoBehaviour
+public class indicazioni : MonoBehaviour
 
 
 {
@@ -12,17 +12,12 @@ public class Dialog_lamp_finale : MonoBehaviour
     public string[] sentences;
     private int index;
     public float typingSpeed;
-    public GameObject NPC;
+    
 
-    //public GameObject camera;
+    public GameObject camera;
     public GameObject fps;
     public GameObject continueButton;
     public GameObject start;
-    public GameObject inv;
-
-    public GameObject item;
-
-    public GameObject invent;
 
 
     private void OnTriggerEnter(Collider other)
@@ -32,13 +27,12 @@ public class Dialog_lamp_finale : MonoBehaviour
         start.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        fps.GetComponent<FirstPersonCharacterController>().enabled = false;
+        fps.SetActive(false);
+        camera.SetActive(true);
         this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        NPC.GetComponent<idleLamp>().enabled = false;
-        NPC.GetComponent<Animation>().Play("Talking1");
-        
-        invent.SetActive(false);
-    }  
+       
+    
+     }  
     
     void Update()
     {
@@ -70,22 +64,17 @@ public class Dialog_lamp_finale : MonoBehaviour
             index++;
             textDisplay.text = "";
             StartCoroutine(Type());
-            NPC.GetComponent<Animation>().Play("Talking1");
         } else
         {
             textDisplay.text = "";
             continueButton.SetActive(false);
             start.SetActive(false);
-            fps.GetComponent<FirstPersonCharacterController>().enabled = true;
+            fps.SetActive(true);
+            camera.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
-            NPC.GetComponent<idleLamp>().enabled = true;
             
-            item.GetComponent<ItemSlot>().enabled = true;
-            invent.SetActive(true);
-
 
         }
-
     }
 
     
