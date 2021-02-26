@@ -83,7 +83,7 @@ public class RecipeManager : MonoBehaviour
 
                 craft.SetActive(false);
                 trigger.SetActive(true);
-                itemslot.GetComponent<ItemSlot>().enabled = false;
+                itemslot.GetComponent<RecipeManager>().enabled = false;
 
                 break;
             }
