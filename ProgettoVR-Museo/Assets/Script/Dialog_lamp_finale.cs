@@ -79,8 +79,7 @@ public class Dialog_lamp_finale : MonoBehaviour
             fps.GetComponent<FirstPersonCharacterController>().enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             NPC.GetComponent<idleLamp>().enabled = true;
-            //inv.GetComponent<Inventory>().enabled = true;
-           // inv.GetComponent<CreazioneGeneratore>().enabled = true;
+            NPC.GetComponent<Animator>().Play("lampadina_accende");
             item.GetComponent<ItemSlot>().enabled = true;
             invent.SetActive(true);
 

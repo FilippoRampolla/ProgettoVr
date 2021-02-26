@@ -39,9 +39,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         NPC.GetComponent<idleLamp>().enabled = false;
-        //fps.GetComponent<FirstPersonCharacterController>().enabled = false;
-        //this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        NPC.GetComponent<Animation>().Play("Stand");
+        NPC.GetComponent<Animation>().Play("idleTalk");
         invent.SetActive(false);
         radio.GetComponent<AudioSource>().enabled = true;
     }

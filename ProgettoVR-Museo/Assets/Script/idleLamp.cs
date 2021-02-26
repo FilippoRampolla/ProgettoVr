@@ -13,6 +13,8 @@ public class idleLamp : MonoBehaviour
     void Update()
     {
         Npc.GetComponent<Animation>().Play("idleTalk");
+        
+       
         Debug.Log("ci sono");
     }
 }
