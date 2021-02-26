@@ -10,9 +10,8 @@ public class Sound {
 
 	[Range(0f, 1f)]
 	public float volume = .75f;
-	
 
-	
+
 	
 
 	public bool loop = false;

@@ -27,6 +27,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
 
     public GameObject invent;
     public GameObject NPCnew;
+    public GameObject radio;
 
     
     private void Start()
@@ -42,7 +43,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
         //this.gameObject.GetComponent<BoxCollider>().enabled = false;
         NPC.GetComponent<Animation>().Play("Stand");
         invent.SetActive(false);
-        FindObjectOfType<AudioManager>().Play("radio");
+        radio.GetComponent<AudioSource>().enabled = true;
     }
      
 
