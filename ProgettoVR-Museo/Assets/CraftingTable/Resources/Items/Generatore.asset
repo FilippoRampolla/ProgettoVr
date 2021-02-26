@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Generator
+  m_Name: Generatore
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
   itemIcon: {fileID: 21300000, guid: d6de053992a058b409769533d65118de, type: 3}
-  itemName: Generetor
+  itemName: generatore

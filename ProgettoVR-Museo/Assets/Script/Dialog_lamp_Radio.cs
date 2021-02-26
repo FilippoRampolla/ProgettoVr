@@ -32,10 +32,12 @@ public class Dialog_lamp_Radio : MonoBehaviour
     public Material bulb;
     public Material wire;
 
+    public GameObject indicazioni;
+    public GameObject generatore;
 
     private void Start()
     {
-
+        Instantiate(generatore);
         bulb.EnableKeyword("_EMISSION");
         wire.EnableKeyword("_EMISSION");
 
@@ -46,7 +48,7 @@ public class Dialog_lamp_Radio : MonoBehaviour
         NPC.GetComponent<idleLamp>().enabled = false;
         NPC.GetComponent<Animation>().Play("idleTalk");
         invent.SetActive(false);
-        radio.GetComponent<AudioSource>().enabled = true;
+        
     }
      
 
@@ -104,9 +106,11 @@ public class Dialog_lamp_Radio : MonoBehaviour
 
             Trigger1.GetComponent<Collider>().enabled = true;
             Trigger2.GetComponent<Collider>().enabled = true;
+            radio.GetComponent<AudioSource>().enabled = true;
+            indicazioni.SetActive(true);
 
             
-            
+
 
 
         }

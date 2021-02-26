@@ -15,9 +15,8 @@ public class RecipeManager : MonoBehaviour
 
     private List<RecipeSO> recipes = new List<RecipeSO>();
 
-
-    public GameObject inventory;
-    public GameObject camera;
+    public GameObject trigger;
+    public GameObject inv;
 
     // Start is called before the first frame update
     void Start()
@@ -80,9 +79,9 @@ public class RecipeManager : MonoBehaviour
             {
                 outputSlot.currItem = recipe.output;
                 outputSlot.UpdateSlotData();
-                inventory.SetActive(false);
-                camera.SetActive(true);
-                Debug.Log("craft riuscito");
+                inv.SetActive(false);
+                trigger.SetActive(true);
+
                 break;
             }
             else

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Potato
   m_EditorClassIdentifier: Assembly-CSharp::ItemSO
   itemIcon: {fileID: 21300000, guid: 04f7d642947a95448bf1d85a076e0bed, type: 3}
-  itemName: Potato
+  itemName: patate
