@@ -31,7 +31,9 @@ public class BellAnim : MonoBehaviour
         var tween = transform.DOMoveY(2.3f , 5f);
         radio.SetActive(false);
         Facoltativo.SetActive(true);
+        Npc.GetComponent<NPCFollow>().enabled = false;
         Npc.transform.position = Vector3.Lerp(Npc.transform.position, pos.position, Time.time);
+        
         
         cam.SetActive(true);
         Fp.SetActive(false);
