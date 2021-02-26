@@ -27,7 +27,8 @@ public class BellAnim : MonoBehaviour
     }
     private void OnChageYposButtonPressed()
     {
-        
+
+        FindObjectOfType<AudioManager>().Stop("radio");
         var tween = transform.DOMoveY(2.3f , 5f);
         radio.SetActive(false);
         Facoltativo.SetActive(true);
